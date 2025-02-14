@@ -1,0 +1,88 @@
+p, h1, h2, h3 {
+    font-family: "Lora";
+}
+
+.image-container {
+    position: relative; /* Makes the container the reference point for positioning */
+    display: inline-block; /* Keeps the image as a block */
+    width: 100%; /* Ensure full-width for responsiveness */
+    margin-top: 10px;
+}
+
+.image-container img {
+    display: block; /* Prevents spacing issues */
+    width: 97%; /* Scales the image to the container */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.text-overlay {
+    font-family: "Lora";
+    position: absolute; /* Positions the text relative to .image-container */
+    font-size: 50px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%; /* Moves the text halfway down */
+    left: 50%; /* Moves the text halfway across */
+    transform: translate(-50%, -50%); /* Centers the text perfectly */
+    color: white; /* Text color */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text horizontally */
+}
+
+@media (max-width: 768px) { /* For tablets and phones */
+    .text-overlay {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) { /* For smaller phones */
+    .text-overlay {
+        font-size: 18px;
+    }
+}
+    .icon_container i {
+        font-size: 100px; /* Default size for larger screens */
+        color: #FCC737;
+    }
+
+    @media (max-width: 768px) { /* For phones and tablets */
+        .icon_container i {
+            font-size: 50px; /* Smaller size for smaller screens */
+        }
+    }
+
+.displayflex {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 20px; /* Adds spacing between the image and text */
+    max-width: 60%; /* Optional: Prevents it from stretching too much */
+    margin: auto; /* Centers the entire flexbox */
+}
+    }
+.displaycol {
+    display: flex;
+    flex-direction: column;
+}
+
+.onehundpx {
+    height: 100px;
+    width: auto;
+}
+
+button {
+    font-family: "Lora";
+}
+.navybluehover {
+    border: 3px solid #3A3960;
+    color: #3A3960;
+    background: white;
+    transition: 1s ease;
+}
+.navybluehover:hover {
+    cursor: pointer;
+    background: #3A3960;
+    color: white;
+}
